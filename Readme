@@ -1,0 +1,248 @@
+# OTP Verification System using Python
+
+## Project Overview
+
+OTP (One-Time Password) verification is a widely used authentication mechanism that enhances security by validating user identity through a temporary password.
+
+This project implements a simple OTP Verification System using Python. The application generates a random 7-digit OTP, simulates sending it to a user's phone number, and verifies the OTP entered by the user.
+
+The project demonstrates the basic principles of user authentication and verification systems commonly used in banking, e-commerce, and online services.
+
+---
+
+## Problem Statement
+
+Traditional username-password authentication may be vulnerable to unauthorized access. OTP-based verification provides an additional layer of security by requiring users to verify their identity using a temporary code.
+
+The objective of this project is to:
+
+* Generate a secure OTP.
+* Simulate OTP delivery to a user's phone number.
+* Verify user-entered OTP.
+* Demonstrate two-factor authentication concepts.
+
+---
+
+## Project Workflow
+
+```text
+User Enters Phone Number
+            ↓
+Generate Random OTP
+            ↓
+Send OTP via SMS (Simulation)
+            ↓
+User Receives OTP
+            ↓
+User Enters OTP
+            ↓
+OTP Verification
+            ↓
+Access Granted / Denied
+```
+
+---
+
+## Technologies Used
+
+### Programming Language
+
+* Python
+
+### Libraries
+
+* Random
+
+---
+
+## Features
+
+* Random 7-digit OTP generation
+* OTP verification functionality
+* Simple authentication workflow
+* Easy-to-understand implementation
+* Beginner-friendly Python project
+
+---
+
+## Code Explanation
+
+### OTP Generation
+
+A random 7-digit OTP is generated using Python's built-in random module.
+
+```python
+otp += str(random.randint(0, 9))
+```
+
+### OTP Sending
+
+The project simulates sending the OTP via SMS.
+
+```python
+print(f"Sending OTP {otp} to {phone_number} via SMS")
+```
+
+### OTP Verification
+
+The entered OTP is compared with the generated OTP.
+
+```python
+return user_otp == generated_otp
+```
+
+---
+
+## Sample Execution
+
+### Input
+
+| Parameter     | Value          |
+| ------------- | -------------- |
+| Phone Number  | +91 7032694836 |
+| Generated OTP | 1234567        |
+| User OTP      | 1234567        |
+
+### Output
+
+```text
+OTP verification successful.
+```
+
+---
+
+## Project Structure
+
+```text
+OTP-Verification-System/
+│
+├── otp_verification.py
+├── README.md
+└── requirements.txt
+```
+
+---
+
+## How to Run
+
+### Clone Repository
+
+```bash
+git clone https://github.com/your-username/otp-verification-system.git
+```
+
+### Navigate to Project Folder
+
+```bash
+cd otp-verification-system
+```
+
+### Run Program
+
+```bash
+python otp_verification.py
+```
+
+---
+
+## Example Output
+
+### Successful Verification
+
+```text
+Sending OTP 1234567 to +91 7032694836 via SMS
+
+OTP has been sent to your phone number.
+
+Enter the OTP you received: 1234567
+
+OTP verification successful.
+```
+
+### Failed Verification
+
+```text
+Sending OTP 1234567 to +91 7032694836 via SMS
+
+OTP has been sent to your phone number.
+
+Enter the OTP you received: 7654321
+
+OTP verification failed.
+```
+
+---
+
+## Applications
+
+OTP verification systems are widely used in:
+
+* Banking Applications
+* Online Shopping Platforms
+* Social Media Platforms
+* Government Portals
+* Mobile Applications
+* Email Verification Systems
+
+---
+
+## Limitations
+
+Current version:
+
+* Simulates SMS delivery only.
+* OTP does not expire.
+* No resend OTP functionality.
+* No maximum attempt limit.
+
+---
+
+## Future Enhancements
+
+* Integrate Twilio API for real SMS delivery.
+* OTP expiration timer.
+* Resend OTP feature.
+* Maximum verification attempts.
+* Email-based OTP verification.
+* Streamlit Web Application.
+* Two-Factor Authentication (2FA) support.
+
+---
+
+## Learning Outcomes
+
+Through this project, the following concepts were explored:
+
+* Python Functions
+* Random Number Generation
+* Conditional Statements
+* User Authentication Logic
+* Basic Security Concepts
+* Program Flow Control
+
+---
+
+## Conclusion
+
+The OTP Verification System successfully demonstrates the implementation of a simple authentication mechanism using Python. Although the current version simulates SMS delivery, the project provides a strong foundation for developing real-world verification systems using APIs such as Twilio, Fast2SMS, or MSG91.
+
+---
+
+## Author
+
+**Purandhar**
+
+Python Mini Project – OTP Verification System
+
+---
+
+## GitHub Badges (Optional)
+
+```md
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Authentication](https://img.shields.io/badge/Project-OTP_Verification-green)
+![Security](https://img.shields.io/badge/Category-Cyber_Security-orange)
+![Status](https://img.shields.io/badge/Project-Completed-success)
+```
+
+This README is clean, professional, and suitable for GitHub portfolios, Python mini-project showcases, and beginner software development projects.
